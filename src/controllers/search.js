@@ -3,8 +3,8 @@ const axios = require("axios");
 // const schema = require("../validations/inputSchema");
 
 const registerCep = async (req, res) => {
-  const { zip_code } = req.body;
-
+  const { zip_code } = req.params;
+  console.log(zip_code);
   const findZipCode = await knex("ceps").where({ zip_code }).first();
 
   if (findZipCode) {
