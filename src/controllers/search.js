@@ -1,9 +1,12 @@
 const knex = require("../dbConnection");
 const axios = require("axios");
-// const schema = require("../validations/inputSchema");
+const inputSchema = require("../validations/inputSchema");
 
 const registerCep = async (req, res) => {
   const { zip_code } = req.params;
+
+  await inputSchema.validate(req.params, { abortEarly: false });
+
   console.log(zip_code);
   const findZipCode = await knex("ceps").where({ zip_code }).first();
 
@@ -26,8 +29,6 @@ const registerCep = async (req, res) => {
       } = data;
 
       const editedzip_code = `${cep.substr(0, 5)}${cep.substr(6, 8)}`;
-
-      // await schema.validate(req.body, { abortEarly: false });
 
       const register = await knex("ceps")
         .insert({ zip_code: editedzip_code, address, district, city, uf })
