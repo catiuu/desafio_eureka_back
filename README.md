@@ -12,9 +12,9 @@ Este é o back-end da aplicação web desenvolvida para avaliação de competên
 Elaborar uma aplicação para ajudar um usuário a fazer a consulta de um CEP. Onde ao informar um CEP a tela apresentará informações de endereço como bairro, município e logradouro. Para tal crie uma um api rest com integração com o serviço ViaCEP e uma aplicação web.
 No backend deverá ser feito um cache das consultas realizadas pelo usuário. Após uma consulta ser feita na api do viaCEP, as informações de endereço devem ser armazenadas em um banco de dado e nas consultas subsequentes do mesmo CEP, estas informações devem ser retornadas com o que foi salvo no banco de dados sem buscar novamente no serviço viaCEP.
 
-💻 [Acesse a aplicação]()
+💻 [Acesse a aplicação](https://buscacepeureka-api.vercel.app/)
 
-:globe_with_meridians: [Front-end da aplicação]()
+:globe_with_meridians: [Front-end da aplicação](https://github.com/catiuu/desafio_eureka_front)
 
 ---
 
@@ -29,10 +29,16 @@ No backend deverá ser feito um cache das consultas realizadas pelo usuário. Ap
 ```
 
 2. Alterar arquivo .env com as configurações do seu banco de dados.
-3. Instalando os pacotes
+3. Instalar os pacotes
 
 ```sh
     npm install
+```
+
+4. Rodar o projeto
+
+```sh
+    npm run dev
 ```
 
 ---
