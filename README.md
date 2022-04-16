@@ -6,7 +6,7 @@
 
 ## 💻 Sobre o projeto
 
-Este é o bak-end da aplicação web desenvolvida para avaliação de competências técnincas do processo seletivo da Eureka.
+Este é o back-end da aplicação web desenvolvida para avaliação de competências técnincas do processo seletivo da Eureka.
 
 **Desafio proposto:**
 Elaborar uma aplicação para ajudar um usuário a fazer a consulta de um CEP. Onde ao informar um CEP a tela apresentará informações de endereço como bairro, município e logradouro. Para tal crie uma um api rest com integração com o serviço ViaCEP e uma aplicação web.
@@ -45,4 +45,3 @@ No backend deverá ser feito um cache das consultas realizadas pelo usuário. Ap
   <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
   <img src="https://img.shields.io/badge/Postgres-07405E?style=for-the-badge&logo=postgresql&logoColor=white" />
 </div>
----
