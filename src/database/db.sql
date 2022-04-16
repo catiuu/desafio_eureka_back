@@ -1,0 +1,1 @@
+CREATE database viacep_api;
