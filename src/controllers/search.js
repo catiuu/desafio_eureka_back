@@ -1,13 +1,13 @@
 const knex = require("../dbConnection");
 const axios = require("axios");
-const inputSchema = require("../validations/inputSchema");
 
 const registerCep = async (req, res) => {
   const { zip_code } = req.params;
 
-  await inputSchema.validate(req.params, { abortEarly: false });
+  if (!zip_code) {
+    return res.status(400).json({ mensagem: "Informe um CEP válido!" });
+  }
 
-  console.log(zip_code);
   const findZipCode = await knex("ceps").where({ zip_code }).first();
 
   if (findZipCode) {
