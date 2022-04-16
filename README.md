@@ -45,4 +45,3 @@ No backend deverá ser feito um cache das consultas realizadas pelo usuário. Ap
   <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
   <img src="https://img.shields.io/badge/Postgres-07405E?style=for-the-badge&logo=postgresql&logoColor=white" />
 </div>
----
